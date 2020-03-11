@@ -1,8 +1,21 @@
-import React, { Component } from 'react';
-import { Route, HashRouter, NavLink } from 'react-router-dom';
+import React from 'react'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
-class MyRouter extends Component {
+import Me from './../view/me/me'
+import Picture from './../view/picture/picture'
+import NotesLink from './../view/notesLinK/notesLink'
 
-}
+import HeaderBar from './../components/headerBar/header'
 
-export default MyRouter;
+const BsaicRoute = () => (
+  <BrowserRouter>
+    <HeaderBar />
+    <Switch>
+      <Route exact path="/" component={Me}></Route>
+      <Route exact path="/picture" component={Picture}></Route>
+      <Route exact path="/notesLink" component={NotesLink}></Route>
+    </Switch>
+  </BrowserRouter>
+)
+
+export default BsaicRoute

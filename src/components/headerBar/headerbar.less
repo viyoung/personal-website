@@ -1,0 +1,28 @@
+.activeState() {
+  background-color: #162b4a;
+  cursor: pointer;
+}
+.header-wrapp {
+  height: 60px;
+  background-color: #1d365d;
+  width: 100%;
+  section {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .active {
+      .activeState();
+    }
+    a {
+      font-size: 16px;
+      color: #b9c8e0;
+      padding: 0px 20px;
+      line-height: 60px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
