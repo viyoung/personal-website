@@ -8,7 +8,18 @@ class Me extends Component {
     this.state = {}
   }
   render() {
-    return <div>我是主页</div>
+    return (
+      <div className="me-wrapp">
+        <div className="log-icon">
+          <span className="block1"></span>
+          <span className="block2"></span>
+          <span className="block3"></span>
+          <span className="block4"></span>
+        </div>
+        <div className="name">VI Young</div>
+        <div className="text">DETAIL</div>
+      </div>
+    )
   }
 }
 

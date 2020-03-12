@@ -6,6 +6,7 @@ import Picture from './../view/picture/picture'
 import NotesLink from './../view/notesLinK/notesLink'
 
 import HeaderBar from './../components/headerBar/header'
+import Footer from './../components/footer/footer'
 
 const BsaicRoute = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const BsaicRoute = () => (
       <Route exact path="/picture" component={Picture}></Route>
       <Route exact path="/notesLink" component={NotesLink}></Route>
     </Switch>
+    <Footer />
   </BrowserRouter>
 )
 
