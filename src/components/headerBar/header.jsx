@@ -8,8 +8,7 @@ class Header extends Component {
     super()
     this.state = {
       routerList: [
-        { path: '/', text: 'ME' },
-        { path: '/picture', text: 'PICTURE' },
+        { path: '/', text: 'PICTURE' },
         { path: '/notesLink', text: 'NOTES LINK' }
       ]
     }

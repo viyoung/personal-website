@@ -7,21 +7,29 @@ class Picture extends Component {
     super()
     this.state = {
       pictureList: [
-        { path: require('./../../assert/image/IMG_0053.jpeg') },
         {
-          path: require('./../../assert/image/IMG_1133.jpeg')
+          path: require('./../../assert/image/IMG_0053.jpeg'),
+          linkPath: '/hometown'
         },
         {
-          path: require('./../../assert/image/IMG_1833.jpeg')
+          path: require('./../../assert/image/IMG_1133.jpeg'),
+          linkPath: '/flower'
         },
         {
-          path: require('./../../assert/image/IMG_2437.jpeg')
+          path: require('./../../assert/image/IMG_1833.jpeg'),
+          linkPath: '/sky'
         },
         {
-          path: require('./../../assert/image/IMG_0385.jpeg')
+          path: require('./../../assert/image/IMG_2437.jpeg'),
+          linkPath: '/mountain'
         },
         {
-          path: require('./../../assert/image/IMG_2613.jpeg')
+          path: require('./../../assert/image/IMG_0385.jpeg'),
+          linkPath: '/city'
+        },
+        {
+          path: require('./../../assert/image/IMG_2613.jpeg'),
+          linkPath: '/sun'
         }
       ]
     }
